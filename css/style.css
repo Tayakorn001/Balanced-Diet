@@ -858,16 +858,19 @@ blockquote {
 /* --------- 6.4 Gallery ---------- */
 
 #gallery img {
-    max-height: 300px;
+    max-height: 350px;
+    display: block;
 }
 
 #gallery [class*='col-'] {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3px;
 }
 
 #gallery a {
     display: inline-block;
-    position: relative;
     overflow: hidden;
 }
 
@@ -886,7 +889,7 @@ blockquote {
     height: 70px;
     border-radius: 100em;
     display: block;
-    position: absolute;
+    position: relative;
     top: 55%;
     left: 50%;
     line-height: 72px;
@@ -895,7 +898,7 @@ blockquote {
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s linear;
-    vertical-align: middle;
+
 }
 
 #gallery a:hover:before {
